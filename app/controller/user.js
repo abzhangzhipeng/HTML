@@ -42,6 +42,17 @@ class UserController extends Controller {
         "data":data
     };
   }
+  
+  async post() {
+    const { ctx } = this;
+    const body = ctx.request.body;
+    console.log(body);
+    
+    ctx.body = {
+        "msg":'ok',
+        "data":"post"
+    };
+  }
 }
 
 module.exports = UserController;

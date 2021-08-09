@@ -9,4 +9,5 @@ module.exports = app => {
   router.get('/list/', controller.home.list);
   router.get('/user/index', controller.user.index);
   router.get('/user/detail/:id',controller.user.detail);
+  router.post('/user/post',controller.user.post);
 };
